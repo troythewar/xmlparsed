@@ -1,0 +1,10 @@
+
+
+<% @feeds.each do |t| %>
+    <h1> NEWS FEED </h1>
+URL: <%=t.article_url %><br/>
+TITLE: <%=t.title %><br/>
+SUMMARY: <%=t.summary %><br/>
+IMAGE: <%=image_tag(t.image_url) %><br/>
+    <hr/>
+<% end %>
